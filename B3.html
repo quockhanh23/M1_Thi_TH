@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let array = prompt('Nhập chuỗi ');
+    array.toString()
+    array = array.toLowerCase()
+
+    function timNguyenAm(arr) {
+        let check = false
+        let count = 0
+        let nguyenAm = ['a', 'i', 'u', 'e', 'o'];
+        for (let i = 0; i < nguyenAm.length; i++) {
+            for (let j = 0; j < arr.length; j++) {
+                if (nguyenAm[i] === arr[j]) {
+                    count++;
+                    check = true
+                }
+            }
+        }
+        if (check) {
+            return count
+        } else {
+            return check
+        }
+    }
+
+    console.log(timNguyenAm(array))
+</script>

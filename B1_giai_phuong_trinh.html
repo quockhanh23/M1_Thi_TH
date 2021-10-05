@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+let ketqua
+    function giaiPhuongTrinh(a , b) {
+        if ( a == 0 && b == 0) {
+            ketqua =  "phương trình có vô số nghiệm"
+        }
+        if (a == 0) {
+            ketqua = 'trình vô nghiệm'
+        }
+        if (a > 0 || a < 0) {
+            ketqua = -b/ a
+        }
+    return ketqua
+    }
+    document.write(giaiPhuongTrinh(5,8))
+</script>
